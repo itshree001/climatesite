@@ -1,13 +1,196 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto",sans-serif;
+
+}
+html,body{
+  height:100%;
+  width: 100%;
+}
+body{
+  background-image: url(./components/logos/wallpaper.jpg);
+
+  background-size: cover;
+  color: #fff;
+}
+img{
+  position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: red;
+}
+header{
+  width: 100%;
+  float: right;
+  height: 60px;
+  line-height: 60px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  padding: 20px;
+}
+.siteInfo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  padding: 10px 20px;
+  width: 300 px;
+  font-size: 40px;
+  background-color: lightgrey;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.sub-title{
+  font-size: 28px;
+  letter-spacing: 6px;
+  padding: 10px 0;
+ 
+}
+footer{
+  position:absolute;
+  display: inline;
+  margin-left: 1850px;
+
+   /* position: absolute;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px; 
+  float: center;
+    background-color: black; */
+
+}
+footer .social{
+  display: block;
+  margin-bottom: 0px; 
+  
+  background-color: black;
+  align-items: center;
+  display: inline;
+  margin-left: 1850px;
+  
+}
+footer .copyright{
+  font-size: 25px;
+  text-align: center;
+  
+  
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.login{
+  float: right;
+  margin: 10px;
+  
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
